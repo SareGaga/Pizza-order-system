@@ -61,7 +61,7 @@ namespace _20210305502SareGaga
                 Id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value),    
                 PizzaName= tbxNameUpdate.Text,
                 Ingredients = tbxIngredientsUpdate.Text,
-                //Price= Convert.ToDecimal(tbxPriceUpdate.Text)
+                Price= Convert.ToDecimal(tbxPriceUpdate.Text)
             });
             LoadProducts();
             MessageBox.Show("Updated");
@@ -71,7 +71,7 @@ namespace _20210305502SareGaga
         {
             tbxNameUpdate.Text = dgwProducts.CurrentRow.Cells[1].Value.ToString();
             tbxIngredientsUpdate.Text = dgwProducts.CurrentRow.Cells[2].Value.ToString();
-            //tbxPriceUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
+            tbxPriceUpdate.Text = dgwProducts.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void TbxSearch_TextChanged(object sender, EventArgs e)
